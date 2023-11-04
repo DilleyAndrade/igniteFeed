@@ -1,0 +1,15 @@
+.wrapper{
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 1rem; /* Para que o conteúdo não fique colado quando tiver no mobile */
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    gap: 2rem;
+    align-items: flex-start; /* Para o grid não estiver e os elementos não ficarem do mesmo tamanho sem querer */
+}
+
+@media (max-width: 768px) {
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+}
